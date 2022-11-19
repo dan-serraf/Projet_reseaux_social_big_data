@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "7705c62b-6b54-4cbc-bac5-68acef37e522",
+		"name": "connexion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "connexion reussis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"a\",\r\n    \"password\" : \"a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/signIn?a=a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signIn"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "a"
+						}
+					]
+				},
+				"description": "connexion user valide"
+			},
+			"response": [
+				{
+					"name": "http://localhost:4000/api/signIn?a=a",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\" : \"a\",\r\n    \"password\" : \"a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"signIn"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44-uvHL6p5UFWj5u3OdZ3RfBgkmgnI\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionId=s%3AXzg8AFk7kvzdtNUEUJxbV5c8vHykBAtc.S%2BCH7nzNs6%2BfO4Jy6oT4smWsmxOma%2FJML8XBKmD0INo; Path=/; Expires=Sun, 16 May 2021 13:19:40 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 16 May 2021 13:09:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User et mot de passe accepté\",\n    \"user_id\": 4\n}"
+				}
+			]
+		},
+		{
+			"name": "connexion mot de passe mauvais",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"a\",\r\n    \"password\" : \"b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/signIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "connexion user inconnu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"aza\",\r\n    \"password\" : \"b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/signIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "connexion formulaire incomplet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/signIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signIn"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
