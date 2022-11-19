@@ -1,0 +1,203 @@
+
+/*
+LOGIN & SIGN UP
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#twitter{
+  color : white;
+}
+
+body{
+ 
+ background: black;
+ 
+}
+
+#balise_input_centre{
+  border-radius: 10px;
+  border: 2px solid white;
+  background: white;
+  box-shadow: 5px 5px 5px 4px rgb(104, 104, 104);
+  
+  }
+
+input::placeholder{
+  text-align: center;
+}
+
+.presentation{
+  color : white;
+  padding: 16px 20px 16px 20px;
+}
+
+.borderSurFormAddMessage{
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+}
+  .surFormAddMessage{
+    padding: 50px;
+   
+  }
+  .formAddMess{
+    display : inline-block;
+    height: 150px;
+    width: 550px;
+    background-color: black;
+    color: white;
+    border : solid ;
+   /* filter: blur(10px);*/
+    border-width: 3px;
+    border-radius: 15px;
+  }
+/*
+  .deconnection{
+    bottom: 25px;
+    position: absolute;
+  } 
+  */
+
+  .bloc_bas{
+    padding-top: 375px ;
+  }
+
+  .bar_recherche{
+    display: inline-block;
+    height: 35px;
+  }
+  .div_bar_recherche{
+    padding: 30px;
+  }
+
+  .a_message{
+    padding-left: 480px;
+    padding-right: 15px ;
+    text-decoration: none;/* enleve texte souligner par exemple */
+    color: white;
+  }
+
+  .a_friends{
+    padding-right: 15px ;
+    text-decoration: none;/* enleve texte souligner par exemple */
+    color: white;
+  }
+  .a_message:hover{
+    color: white;
+    cursor: pointer;
+  }
+  .a_friends:hover{
+    color: white;
+    cursor: pointer;
+  }
+  .fond_baniere{
+    display: flex;
+    justify-content: center;
+    
+  }
+  /*
+  .fond_baniere_{
+    display: flex;
+    justify-content: center;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+  }
+  */
+  .addMess{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+.balise_input{
+  
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px 4px rgb(104, 104, 104)
+  
+  }
+
+  .principal{
+    margin: 0;
+    padding: 0;
+  }
+
+  button.collapsed.container.accordion-button{
+    border-color: white;
+  }
+
+ .accordion-button:not(.collapsed){
+   background-color: black;
+   color: white;
+ }
+
+  .accordion-item, .accordion-header, .accordion-body, .accordion-button{
+    background-color: black;
+    color: white;
+   
+  }
+  
+#title_login{
+  font-family: Helvetica, sans-serif;
+}
+
+.btn1{
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background:  black;
+  color : white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px 4px rgb(104, 104, 104)
+}
+
+.btn1:hover{
+  background-color: white ;
+  color :  rgb(104, 104, 104) ;
+  border: 1px solid;
+
+}
+
+/*
+MUR
+*/
+
+
+.mur{
+margin: 0;
+padding: 0;
+}
+
+.menu_verticale{
+  color : white; 
+}
+
+.menu_item{
+  padding: 15px;
+  border-bottom: 2px solid rgb(176, 215, 238);
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+  border-top: 2px solid rgba(255,255,255,0.25);
+}
+
+.menu_item a{
+  color: white;
+  text-decoration: none;/* enleve texte souligner par exemple */
+
+}
+
+
+.menu_item a .menu{
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+
+.menu_item:hover{
+  background-color: rgb(235, 231, 231) ; /*rgb(122, 198, 243);*/
+   
+}
